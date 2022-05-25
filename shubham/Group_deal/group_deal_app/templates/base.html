@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GROUP DEALS</title>
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css">
+     <link rel="stylesheet" href="{% static 'fonts/material-icon/css/material-design-iconic-font.min.css' %}">
+	<link rel="icon" href="images/Original.png" type="images/png" sizes="16x16">
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+</head>
+<body>
+  <section class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 col-xs-12" >
+          <div class="sidenav wow fadeInLeft animated new">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="logo">
+              <a href="/">
+                <img src="{% static '/images/logo-light.png' %}" alt="">
+              </a>
+            </div>
+            <button type="button" class="navbar-toggler toggle-one" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+           </button>
+            <div class="collapse navbar-collapse main-change" id="navbarCollapse">
+            <ul class="navbar-nav left-side-bar">   
+              {% if request.user.is_authenticated %}
+              <li><a href="/">Homepage</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="{% url 'logout' %}">Logout</a></li> | {{request.user}}
+              <img src="{{ user.socialaccount_set.all.0.get_avatar_url }}">
+              {{ user.socialaccount_set.all.0.extra_data.name }}
+              <li><a href="#">About Us</a></li>
+              {% else %}
+              <li><a href="{% url 'login' %}">Login</a> | <a href="{% url 'sign' %}">SignUp</a></li>
+              {% endif %}
+            </ul>
+          </div>
+        </nav>
+          </div>
+        </div>
+        
+     </div>
+        
+  </div>
+</div>
+
+{% block content %}{% endblock content %}
+
+<div class="col-sm-6 col-xs-12 left-footer-section">
+            <ul>
+               <li>Contact Us</li>
+               <li>Privacy</li>  
+             </ul>
+           </div>
+           <div class="col-sm-6 col-xs-12 right-footer-section">
+             <ul>
+               <li><img src="{% static 'images/product/Facebook.png' %}"></li>
+               <li><img src="{% static 'images/product/Instagram.png' %}"></li>
+               <li><img src="{% static 'images/product/Pinterest.png' %}"></li>
+               <li><img src="{% static 'images/product/Twitter.png' %}"></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+      </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+ <script src="{% static 'js/wow.js' %}"></script>
+ <script src="{% static 'js/main.js' %}"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button").click(function(){
+       $("body").toggleClass("highlight", 5000);
+           });
+    });
+</script>
+
+ <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        }
+    );
+    </script>
+{% block javascript %}
+
+{% endblock javascript %}
+
+</body>
+</html>

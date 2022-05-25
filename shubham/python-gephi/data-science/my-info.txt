@@ -1,0 +1,45 @@
+discord
+
+username: shubham-aviox
+pass: Shubh@123@
+
+git
+
+git init
+git remote add origin https://github.com/shubham-aviox/store-management.git
+git add file_name
+git commit -m "any message"
+git push -u origin master
+git: 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
+shubham-aviox
+aviox123
+
+
+telegram bot token: 5315433451:AAHvIW8trdxHReIzPYaPb2ezHXQrd7QadBA
+
+
+psql:
+
+sudo -u postgres psql
+create database db_name
+drop database db_name
+psql -U bot_ins_usr42 -h localhost bot_mod_collection < /home/development/Downloads/bot_mod_collection.sql
+UPDATE ca_cslb_workers_comp_temp set prospect_crawler = 'NO';
+
+ssh aviox@192.168.0.133
+
+java -jar es.jar
+sudo shutdown -h +425
+
+http://13.235.156.97:5020/v1/apidocs/
+
+export ANALYTICAL_BASE_URL="https://appreciate-performance-api-dev.pacewisdom.in"
+
+
+pending test cases:-
+
+1.
+POST /update/documents/
+test_staff_login
+test_forgot_or_reset_password_post
+test_set_staff_password

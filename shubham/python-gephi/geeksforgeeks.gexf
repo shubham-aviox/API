@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-04-11">
+    <creator>NetworkX 2.8</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="Adams John" label="Adams John" />
+      <node id="North Caucus" label="North Caucus" />
+      <node id="Adams Samuel" label="Adams Samuel" />
+      <node id="Long Room Club" label="Long Room Club" />
+      <node id="Allen Dr" label="Allen Dr" />
+      <node id="Boston Committee" label="Boston Committee" />
+      <node id="Appleton Nathaniel" label="Appleton Nathaniel" />
+      <node id="London Enemies" label="London Enemies" />
+      <node id="Ash Gilbert" label="Ash Gilbert" />
+      <node id="St Andrews Lodge" label="St Andrews Lodge" />
+      <node id="Young Thomas" label="Young Thomas" />
+      <node id="Loyal Nine" label="Loyal Nine" />
+      <node id="Winthrop John" label="Winthrop John" />
+      <node id="Tea Party" label="Tea Party" />
+    </nodes>
+    <edges>
+      <edge source="Adams John" target="North Caucus" id="0" />
+      <edge source="Adams Samuel" target="Long Room Club" id="1" />
+      <edge source="Allen Dr" target="Boston Committee" id="2" />
+      <edge source="Appleton Nathaniel" target="London Enemies" id="3" />
+      <edge source="Ash Gilbert" target="St Andrews Lodge" id="4" />
+      <edge source="Young Thomas" target="Loyal Nine" id="5" />
+      <edge source="Winthrop John" target="Tea Party" id="6" />
+    </edges>
+  </graph>
+</gexf>

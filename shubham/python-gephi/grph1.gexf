@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-04-12">
+    <creator>NetworkX 2.8</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <nodes>
+      <node id="Station1" label="Station1" />
+      <node id="Station2" label="Station2" />
+      <node id="Station3" label="Station3" />
+      <node id="Station4" label="Station4" />
+      <node id="Station5" label="Station5" />
+      <node id="Station6" label="Station6" />
+    </nodes>
+    <edges>
+      <edge source="Station1" target="Station2" id="0" />
+      <edge source="Station1" target="Station4" id="1" />
+      <edge source="Station1" target="Station5" id="2" />
+      <edge source="Station2" target="Station3" id="3" />
+      <edge source="Station2" target="Station5" id="4" />
+      <edge source="Station2" target="Station6" id="5" />
+      <edge source="Station3" target="Station5" id="6" />
+      <edge source="Station4" target="Station1" id="7" />
+      <edge source="Station4" target="Station2" id="8" />
+      <edge source="Station4" target="Station6" id="9" />
+      <edge source="Station5" target="Station6" id="10" />
+    </edges>
+  </graph>
+</gexf>

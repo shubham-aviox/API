@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <section class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 col-xs-12" >
+          
+        </div>
+        <div class="col-sm-10 col-xs-12">
+          <div class="main">
+           <div class=" column main-top-section-product">
+            {% for product in products %}
+            <div class="col-md-4 col-xs-12 ">
+              
+              <div class="main-product-sec wow zoomIn animated">
+                <div class="main_sub_product">
+                  <a href="{{product.get_absolute_url}}">
+                    <div class="image-section">
+                      <img src="{{product.image.url}}">
+                      <div class="hover-image">
+                        <img src="{% static 'images/product/icon.png' %}">
+                      </div>
+                     
+                    </div>
+                  </a>
+                  <div class="main-title-paymnt-heading">
+                  <a href="product-one.html">
+                    <h2>{{product.title}}</h2>
+                  </a>
+                  <h3>{{product.price}}$</h3>
+               </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                      <h2>Deposit <span class="money-deposit">10$</span></h2>
+                    </div>
+                    <div class="payment-sub-section-two">
+                      <a href="#">Pay Now</a>    
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    <div class="payment-day-one">
+                      <h2>2 days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 people bought this</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            
+        </div>
+        {% endfor %}
+        
+      </div>
+   <!-- Sing in  Form -->
+         <div class="modal sign-in" id="myModalone">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <section class="signin">
+            <div class="">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
+                        
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Sign In</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group remember">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+                            <a href="#" class="signup-image-link">Create an account</a>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" formaction="myprofile.html" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Or login with</span>
+                            <ul class="socials">
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </section>
+        </div> 
+      </div>
+    </div>
+  </div>     
+</section>
+
+{% endblock content %}

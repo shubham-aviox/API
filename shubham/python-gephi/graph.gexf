@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-04-11">
+    <creator>NetworkX 2.8</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="Adams John" label="Adams John" />
+      <node id="North Caucus" label="North Caucus" />
+      <node id="Adams Samuel" label="Adams Samuel" />
+      <node id="Long Room Club" label="Long Room Club" />
+      <node id="Allen Dr" label="Allen Dr" />
+      <node id="Boston Committee" label="Boston Committee" />
+      <node id="Appleton Nathaniel" label="Appleton Nathaniel" />
+      <node id="London Enemies" label="London Enemies" />
+      <node id="Ash Gilbert" label="Ash Gilbert" />
+      <node id="St Andrews Lodge" label="St Andrews Lodge" />
+      <node id="Young Thomas" label="Young Thomas" />
+      <node id="Loyal Nine" label="Loyal Nine" />
+      <node id="Winthrop John" label="Winthrop John" />
+      <node id="Tea Party" label="Tea Party" />
+      <node id="Barber Nathaniel" label="Barber Nathaniel" />
+      <node id="nan" label="nan" />
+      <node id="Barnard Samuel" label="Barnard Samuel" />
+      <node id="Barrett Samuel'" label="Barrett Samuel'" />
+      <node id="Bass Henry" label="Bass Henry" />
+      <node id="Blake Increase" label="Blake Increase" />
+      <node id="Boit John" label="Boit John" />
+      <node id="Bolter Thomas" label="Bolter Thomas" />
+      <node id="Boynton Richard" label="Boynton Richard" />
+      <node id="Bradford John" label="Bradford John" />
+      <node id="Bradlee David" label="Bradlee David" />
+      <node id="Bradlee Josiah" label="Bradlee Josiah" />
+      <node id="Bradlee Nathaniel" label="Bradlee Nathaniel" />
+      <node id="Bradlee Thomas" label="Bradlee Thomas" />
+      <node id="Breck William" label="Breck William" />
+      <node id="Bewer James" label="Bewer James" />
+      <node id="Brimmer Herman" label="Brimmer Herman" />
+    </nodes>
+    <edges>
+      <edge source="Adams John" target="North Caucus" id="0" />
+      <edge source="Adams Samuel" target="Long Room Club" id="1" />
+      <edge source="Allen Dr" target="Boston Committee" id="2" />
+      <edge source="Appleton Nathaniel" target="London Enemies" id="3" />
+      <edge source="Ash Gilbert" target="St Andrews Lodge" id="4" />
+      <edge source="Young Thomas" target="Loyal Nine" id="5" />
+      <edge source="Winthrop John" target="Tea Party" id="6" />
+      <edge source="Barber Nathaniel" target="nan" id="7" />
+      <edge source="nan" target="Barnard Samuel" id="8" />
+      <edge source="nan" target="Barrett Samuel'" id="9" />
+      <edge source="nan" target="Bass Henry" id="10" />
+      <edge source="nan" target="Blake Increase" id="11" />
+      <edge source="nan" target="Boit John" id="12" />
+      <edge source="nan" target="Bolter Thomas" id="13" />
+      <edge source="nan" target="Boynton Richard" id="14" />
+      <edge source="nan" target="Bradford John" id="15" />
+      <edge source="nan" target="Bradlee David" id="16" />
+      <edge source="nan" target="Bradlee Josiah" id="17" />gjgh
+      <edge source="nan" target="Bradlee Nathaniel" id="18" />
+      <edge source="nan" target="Bradlee Thomas" id="19" />
+      <edge source="nan" target="Breck William" id="20" />
+      <edge source="nan" target="Bewer James" id="21" />
+      <edge source="nan" target="Brimmer Herman" id="22" />
+    </edges>
+  </graph>
+</gexf>

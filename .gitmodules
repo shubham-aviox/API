@@ -1,0 +1,3 @@
+[submodule "shubham/git-pro/subrepo"]
+	path = shubham/git-pro/subrepo
+	url = https://github.com/shubham-aviox/parent-repo
